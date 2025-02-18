@@ -31,7 +31,7 @@
             button.classList.add("clicked");
             setTimeout(() => button.classList.remove("clicked"), 200);
 
-            fetch(`/analyze/${proteinId}`)
+            fetch(`api/analyze/${proteinId}`)
                 .then(response => response.json())
                 .then(data => {
                     if (data.success) {
